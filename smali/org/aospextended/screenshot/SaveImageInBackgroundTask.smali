@@ -1317,7 +1317,7 @@
     .local v3, "shareAction":Landroid/app/PendingIntent;
     new-instance v15, Landroid/app/Notification$Action$Builder;
 
-    const v0, 0x1040603
+    const v0, 0x7f0c001f
 
     .line 451
     invoke-virtual {v6, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1379,7 +1379,7 @@
     .local v0, "deleteAction":Landroid/app/PendingIntent;
     new-instance v8, Landroid/app/Notification$Action$Builder;
 
-    const v15, 0x10401c2
+    const v15, 0x7f0c0020
 
     .line 461
     invoke-virtual {v6, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

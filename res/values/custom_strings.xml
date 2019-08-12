@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="screen_orientation_changed">Screen orientation cannot be changed while capturing expanded screenshots.</string>
+    <string name="top_activity_changed">App switching is not supported while capturing expanded screenshots.</string>
+    <string name="scrolling">The screen will scroll automatically while capturing expanded screenshots.</string>
+    <string name="stop_and_save">Tap the screen to stop scrolling and expanded screenshot will be captured.</string>
+    <string name="title">Expanded Screenshot</string>
+    <string name="summary">After taking screenshot, tap expanded screenshot to capture the scrollable contents below.</string>
+    <string name="not_support_longshot">Expanded screenshot is not supported on this page.</string>
+    <string name="got_it">Got it</string>
+    <string name="longshot_guide_support">Tap here to try out Expanded Screenshot.</string>
+    <string name="longshot_guide_not_support">Expanded screenshot is not supported on this page.</string>
+    <string name="screenshot_stoped_text">The expanded screenshot has stopped</string>
+</resources>

@@ -369,6 +369,8 @@
     <public type="string" name="screenshot_failed_to_capture_text" id="0x7f0c001c" />
     <public type="string" name="screenshot_failed_to_save_unknown_text" id="0x7f0c001d" />
     <public type="string" name="notification_channel_screenshot" id="0x7f0c001e" />
+    <public type="string" name="share" id="0x7f0c001f" />
+    <public type="string" name="delete" id="0x7f0c0020" />
     <public type="style" name="TextAppearance" id="0x7f0d0000" />
     <public type="style" name="TextAppearance.GuideText" id="0x7f0d0001" />
     <public type="style" name="TextAppearance.GuideText.Edit" id="0x7f0d0002" />

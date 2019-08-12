@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">@string/notification_channel_screenshot</string>
+    <string name="screenshot_failed_text" translatable="false">@string/screenshot_failed_to_save_text</string>
+    <string name="screenshot_saving_text" translatable="false">@string/screenshot_saving_ticker</string>
+    <string name="longshot_mode" translatable="false">@string/stop_and_save</string>
+    <string name="oneplus_contorl_font_family_subheading" translatable="false">sans-serif</string>
+    <string name="oneplus_contorl_font_family_button" translatable="false">sans-serif-medium</string>
+    <string name="oneplus_delete" translatable="false">Delete</string>
+    <string name="oneplus_share" translatable="false">Send</string>
+    <string name="reject_no_prompt" translatable="false" />
+    <string name="join_error" translatable="false">Fail to stitch bitmaps.</string>
+    <string name="maximum_pages" translatable="false"></string>
+</resources>

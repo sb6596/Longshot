@@ -566,7 +566,7 @@
 
     const/4 v10, 0x0
 
-    const/16 v11, 0x7de
+    const/16 v11, 0x7f4
 
     const v12, 0x1080500
 
@@ -2517,7 +2517,7 @@
     :cond_4
     iget-object v3, p0, Lorg/aospextended/screenshot/GlobalScreenshot;->mWindowLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
-    const/16 v4, 0x7de
+    const/16 v4, 0x7f4
 
     iput v4, v3, Landroid/view/WindowManager$LayoutParams;->type:I
 

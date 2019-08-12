@@ -3761,7 +3761,7 @@
     sput v3, Lorg/aospextended/screenshot/longshot/util/Configs;->mHeaderOffset:I
 
     .line 288
-    sput-boolean v3, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_WITH_ISSUE_REPORT:Z
+    #sput-boolean v3, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_WITH_ISSUE_REPORT:Z
 
     .line 293
     const/4 v0, 0x0
@@ -3783,10 +3783,10 @@
     sput v6, Lorg/aospextended/screenshot/longshot/util/Configs;->RLEASE_TYPE_CLOSE_BETA:I
 
     .line 325
-    sput-boolean v3, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_ADD_WATERMARK:Z
+    #sput-boolean v3, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_ADD_WATERMARK:Z
 
     .line 328
-    sput-boolean v3, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_ENCRYPT_IMAGE:Z
+    #sput-boolean v3, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_ENCRYPT_IMAGE:Z
 
     .line 329
     sput v4, Lorg/aospextended/screenshot/longshot/util/Configs;->WATERMARK_TIMES:I
@@ -5651,7 +5651,7 @@
 
     move-result v1
 
-    sput-boolean v1, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_ENCRYPT_IMAGE:Z
+    #sput-boolean v1, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_ENCRYPT_IMAGE:Z
 
     .line 406
     invoke-static {p0}, Lorg/aospextended/screenshot/longshot/util/Configs;->getWaterMarkShowTimes(Landroid/content/Context;)I
@@ -5665,7 +5665,7 @@
 
     move-result v1
 
-    sput-boolean v1, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_ADD_WATERMARK:Z
+    #sput-boolean v1, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_ADD_WATERMARK:Z
 
     .line 410
     sget-object v1, Lorg/aospextended/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
@@ -5678,7 +5678,7 @@
 
     move-result v1
 
-    sput-boolean v1, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_WITH_ISSUE_REPORT:Z
+    #sput-boolean v1, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_WITH_ISSUE_REPORT:Z
 
     .line 412
     invoke-static {p0}, Lorg/aospextended/screenshot/longshot/util/Configs;->loadLineParams(Landroid/content/Context;)V

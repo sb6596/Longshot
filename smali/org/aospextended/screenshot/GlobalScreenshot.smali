@@ -28,9 +28,9 @@
 
 .field private static final LONGSHOT_UNSUPPORT_GUIDER_SHOWED:Ljava/lang/String; = "longshot_unsupport_guider_showed"
 
-.field private static final OP_GALLERY_EDITOR_ACTIVITY:Ljava/lang/String; = "com.oneplus.gallery.PhotoEditorActivity"
+.field private static final OP_GALLERY_EDITOR_ACTIVITY:Ljava/lang/String; = "com.google.android.markup.AnnotateActivity"
 
-.field private static final OP_GALLERY_PACKAGE_NAME:Ljava/lang/String; = "com.oneplus.gallery"
+.field private static final OP_GALLERY_PACKAGE_NAME:Ljava/lang/String; = "com.google.android.markup"
 
 .field public static SCREENSHOTS:Ljava/lang/String; = null
 
@@ -1419,9 +1419,9 @@
 
     move-result-object v2
 
-    const-string v3, "com.oneplus.gallery"
+    const-string v3, "com.google.android.markup"
 
-    const-string v4, "com.oneplus.gallery.PhotoEditorActivity"
+    const-string v4, "com.google.android.markup.AnnotateActivity"
 
     const/4 v5, 0x0
 

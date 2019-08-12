@@ -33,7 +33,7 @@
 
 
 # instance fields
-.field private mCallback:Lcom/oneplus/longshot/ILongScreenshotCallback;
+.field private mCallback:Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
 .field private mCheckThread:Lorg/aospextended/screenshot/longshot/task/BaseThread;
 
@@ -159,7 +159,7 @@
     iput-object v1, p0, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->mFinisher:Ljava/lang/Runnable;
 
     .line 81
-    iput-object v1, p0, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->mCallback:Lcom/oneplus/longshot/ILongScreenshotCallback;
+    iput-object v1, p0, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->mCallback:Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
     .line 82
     sget-object v2, Lorg/aospextended/screenshot/longshot/state/LongshotState;->IDLE:Lorg/aospextended/screenshot/longshot/state/LongshotState;
@@ -1598,9 +1598,9 @@
 
     .line 172
     :try_start_0
-    iget-object v0, p0, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->mCallback:Lcom/oneplus/longshot/ILongScreenshotCallback;
+    iget-object v0, p0, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->mCallback:Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
-    invoke-interface {v0}, Lcom/oneplus/longshot/ILongScreenshotCallback;->notifyMove()V
+    invoke-interface {v0}, Lcom/android/internal/custom/longshot/ILongScreenshotCallback;->notifyMove()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2043,10 +2043,10 @@
     return-void
 .end method
 
-.method public start(Ljava/lang/Runnable;Lcom/oneplus/longshot/ILongScreenshotCallback;ZZ)V
+.method public start(Ljava/lang/Runnable;Lcom/android/internal/custom/longshot/ILongScreenshotCallback;ZZ)V
     .locals 2
     .param p1, "finisher"    # Ljava/lang/Runnable;
-    .param p2, "callback"    # Lcom/oneplus/longshot/ILongScreenshotCallback;
+    .param p2, "callback"    # Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
     .param p3, "statusBarVisible"    # Z
     .param p4, "navBarVisible"    # Z
 
@@ -2061,7 +2061,7 @@
     iput-object p1, p0, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->mFinisher:Ljava/lang/Runnable;
 
     .line 408
-    iput-object p2, p0, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->mCallback:Lcom/oneplus/longshot/ILongScreenshotCallback;
+    iput-object p2, p0, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->mCallback:Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
     .line 409
     invoke-direct {p0, p4}, Lorg/aospextended/screenshot/longshot/state/LongshotMode;->initNavigationBar(Z)V

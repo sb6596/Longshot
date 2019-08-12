@@ -2747,10 +2747,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/oneplus/longshot/LongScreenshotManager;
+    check-cast v0, Lcom/android/internal/custom/longshot/LongScreenshotManager;
 
     .line 1784
-    .local v0, "sm":Lcom/oneplus/longshot/LongScreenshotManager;
+    .local v0, "sm":Lcom/android/internal/custom/longshot/LongScreenshotManager;
     if-eqz v0, :cond_0
 
     .line 1785
@@ -2758,7 +2758,7 @@
 
     iget-boolean v2, p0, Lorg/aospextended/screenshot/GlobalScreenshot;->mNavBarVisible:Z
 
-    invoke-virtual {v0, v1, v2}, Lcom/oneplus/longshot/LongScreenshotManager;->takeLongshot(ZZ)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/internal/custom/longshot/LongScreenshotManager;->takeLongshot(ZZ)V
 
     goto :goto_0
 

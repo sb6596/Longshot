@@ -18,15 +18,15 @@
 
 
 # instance fields
-.field private mCallback:Lcom/oneplus/longshot/ILongScreenshotCallback;
+.field private mCallback:Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
 .field final synthetic this$0:Lorg/aospextended/screenshot/LongshotService;
 
 
 # direct methods
-.method public constructor <init>(Lorg/aospextended/screenshot/LongshotService;Lcom/oneplus/longshot/ILongScreenshotCallback;)V
+.method public constructor <init>(Lorg/aospextended/screenshot/LongshotService;Lcom/android/internal/custom/longshot/ILongScreenshotCallback;)V
     .locals 0
-    .param p2, "callback"    # Lcom/oneplus/longshot/ILongScreenshotCallback;
+    .param p2, "callback"    # Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
     .line 140
     iput-object p1, p0, Lorg/aospextended/screenshot/LongshotService$Finisher;->this$0:Lorg/aospextended/screenshot/LongshotService;
@@ -36,10 +36,10 @@
     .line 138
     const/4 p1, 0x0
 
-    iput-object p1, p0, Lorg/aospextended/screenshot/LongshotService$Finisher;->mCallback:Lcom/oneplus/longshot/ILongScreenshotCallback;
+    iput-object p1, p0, Lorg/aospextended/screenshot/LongshotService$Finisher;->mCallback:Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
     .line 141
-    iput-object p2, p0, Lorg/aospextended/screenshot/LongshotService$Finisher;->mCallback:Lcom/oneplus/longshot/ILongScreenshotCallback;
+    iput-object p2, p0, Lorg/aospextended/screenshot/LongshotService$Finisher;->mCallback:Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
     .line 142
     return-void
@@ -61,9 +61,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 148
-    iget-object v0, p0, Lorg/aospextended/screenshot/LongshotService$Finisher;->mCallback:Lcom/oneplus/longshot/ILongScreenshotCallback;
+    iget-object v0, p0, Lorg/aospextended/screenshot/LongshotService$Finisher;->mCallback:Lcom/android/internal/custom/longshot/ILongScreenshotCallback;
 
-    invoke-interface {v0}, Lcom/oneplus/longshot/ILongScreenshotCallback;->stop()V
+    invoke-interface {v0}, Lcom/android/internal/custom/longshot/ILongScreenshotCallback;->stop()V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

@@ -3798,9 +3798,7 @@
 
     aput v1, v0, v3
 
-    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v0
+    const/4 v0, 0x1
 
     sput-boolean v0, Lorg/aospextended/screenshot/longshot/util/Configs;->IS_SUPPORT_CUSTOM_STATUS_BAR:Z
 
@@ -5841,22 +5839,9 @@
 .end method
 
 .method public static noHWButton()Z
-    .locals 3
+    .locals 1
 
-    .line 818
     const/4 v0, 0x1
-
-    new-array v0, v0, [I
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x34
-
-    aput v2, v0, v1
-
-    invoke-static {v0}, Landroid/util/OpFeatures;->isSupport([I)Z
-
-    move-result v0
 
     return v0
 .end method

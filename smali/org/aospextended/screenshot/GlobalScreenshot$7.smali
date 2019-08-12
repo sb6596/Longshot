@@ -72,7 +72,7 @@
 
     .line 1347
     .local v0, "cr":Landroid/content/ContentResolver;
-    const-string v1, "oem_screenshot_sound_enable"
+    const-string v1, "screenshot_sound"
 
     const/4 v2, 0x1
 

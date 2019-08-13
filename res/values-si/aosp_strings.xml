@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="share" msgid="1778686618230011964">"බෙදාගන්න"</string>
+    <string name="delete" msgid="6098684844021697789">"මකන්න"</string>
+    <string name="screenshot_saving_ticker" msgid="7403652894056693515">"තිර රුව සුරකිමින්…"</string>
+    <string name="screenshot_saving_title" msgid="8242282144535555697">"තිර රුව සුරැකෙමින් පවතී…"</string>
+    <string name="screenshot_saved_title" msgid="5637073968117370753">"තිර රුව සුරකින ලදී"</string>
+    <string name="screenshot_saved_text" msgid="7574667448002050363">"ඔබගේ තිර රුව බැලීමට තට්ටු කරන්න"</string>
+    <string name="screenshot_failed_title" msgid="7612509838919089748">"තිර රුව සුරැකිය නොහැකි විය"</string>
+    <string name="screenshot_failed_to_save_unknown_text" msgid="3637758096565605541">"තිර රුව නැවත ගැනීමට උත්සාහ කරන්න"</string>
+    <string name="screenshot_failed_to_save_text" msgid="3041612585107107310">"සීමිත ගබඩා ඉඩ නිසා තිර රුව සුරැකිය නොහැකිය"</string>
+    <string name="screenshot_failed_to_capture_text" msgid="173674476457581486">"තිර රූ ගැනීමට යෙදුම හෝ ඔබගේ සංවිධානය ඉඩ නොදේ"</string>
+    <string name="notification_channel_screenshot" msgid="6314080179230000938">"තිර රු"</string>
+</resources>

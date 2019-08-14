@@ -10,7 +10,7 @@
     <integer name="config_capture_last_delay_1">0</integer>
     <integer name="config_capture_last_delay_2">100</integer>
     <integer name="config_capture_last_delay_3">250</integer>
-    <integer name="config_capture_next_delay">300</integer>
+    <integer name="config_capture_next_delay">1000</integer>
     <integer name="config_capture_over_delay">0</integer>
     <integer name="config_effect_delay">500</integer>
     <integer name="config_percent_max">10000</integer>

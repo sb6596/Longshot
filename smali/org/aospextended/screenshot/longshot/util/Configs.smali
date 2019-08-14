@@ -433,8 +433,6 @@
 
 .field public static final enum WITH_ISSUE_REPORT_ACTIVITY:Lorg/aospextended/screenshot/longshot/util/Configs;
 
-.field private static gaInstance:Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;
-
 .field private static mAppTrackers:Lnet/oneplus/odm/insight/tracker/AppTracker;
 
 .field public static mHeaderOffset:I
@@ -3770,9 +3768,6 @@
 
     sput-object v0, Lorg/aospextended/screenshot/longshot/util/Configs;->mTopActivity:Landroid/content/ComponentName;
 
-    .line 298
-    sput-object v0, Lorg/aospextended/screenshot/longshot/util/Configs;->gaInstance:Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;
-
     .line 320
     const-string v0, ""
 
@@ -5690,9 +5685,6 @@
     .line 412
     invoke-static {p0}, Lorg/aospextended/screenshot/longshot/util/Configs;->loadLineParams(Landroid/content/Context;)V
 
-    .line 414
-    invoke-static {p0}, Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;->init(Landroid/content/Context;)V
-
     .line 439
     return-void
 .end method
@@ -5992,63 +5984,6 @@
     .param p2, "param"    # Ljava/lang/String;
     .param p3, "value"    # Ljava/lang/String;
 
-    .line 764
-    sget-object v0, Lorg/aospextended/screenshot/longshot/util/Configs;->mAppTrackers:Lnet/oneplus/odm/insight/tracker/AppTracker;
-
-    if-nez v0, :cond_0
-
-    .line 765
-    new-instance v0, Lnet/oneplus/odm/insight/tracker/AppTracker;
-
-    invoke-direct {v0, p0}, Lnet/oneplus/odm/insight/tracker/AppTracker;-><init>(Landroid/content/Context;)V
-
-    sput-object v0, Lorg/aospextended/screenshot/longshot/util/Configs;->mAppTrackers:Lnet/oneplus/odm/insight/tracker/AppTracker;
-
-    .line 767
-    :cond_0
-    if-nez p3, :cond_1
-
-    sget-object p3, Lorg/aospextended/screenshot/longshot/util/Configs;->mTopFocusWindow:Ljava/lang/String;
-
-    .line 769
-    :cond_1
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    .line 770
-    .local v0, "data":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
-    invoke-interface {v0, p2, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 771
-    sget-object v1, Lorg/aospextended/screenshot/longshot/util/Configs;->mAppTrackers:Lnet/oneplus/odm/insight/tracker/AppTracker;
-
-    invoke-virtual {v1, p1, v0}, Lnet/oneplus/odm/insight/tracker/AppTracker;->onEvent(Ljava/lang/String;Ljava/util/Map;)V
-
-    .line 773
-    sget-object v1, Lorg/aospextended/screenshot/longshot/util/Configs;->gaInstance:Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;
-
-    if-nez v1, :cond_2
-
-    .line 774
-    invoke-static {p0}, Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;->getInstance(Landroid/content/Context;)Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;
-
-    move-result-object v1
-
-    sput-object v1, Lorg/aospextended/screenshot/longshot/util/Configs;->gaInstance:Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;
-
-    .line 776
-    :cond_2
-    sget-object v1, Lorg/aospextended/screenshot/longshot/util/Configs;->gaInstance:Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;
-
-    if-eqz v1, :cond_3
-
-    sget-object v1, Lorg/aospextended/screenshot/longshot/util/Configs;->gaInstance:Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;
-
-    invoke-virtual {v1, p1, p2, p3}, Lorg/aospextended/screenshot/longshot/util/GoogleAnalyticsHelper;->send(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 777
-    :cond_3
     return-void
 .end method
 

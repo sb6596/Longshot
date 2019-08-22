@@ -22,7 +22,7 @@
 
 .field private static final BACKGROUND_ALPHA:F = 0.7f
 
-.field private static final LONGSHOT_DROP_OUT_DELAY:I = 0x3e8
+.field private static final LONGSHOT_DROP_OUT_DELAY:I = 0x5dc
 
 .field private static final LONGSHOT_SUPPORT_GUIDER_SHOWED:Ljava/lang/String; = "longshot_support_guider_showed"
 
@@ -1212,7 +1212,7 @@
 
     .line 1521
     :cond_1
-    const-wide/16 v1, 0x3e8
+    const-wide/16 v1, 0x5dc
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
@@ -2656,7 +2656,7 @@
 
     iget-object v2, p0, Lorg/aospextended/screenshot/GlobalScreenshot;->mEndScreenshotAnimTimeout:Ljava/lang/Runnable;
 
-    const-wide/16 v5, 0x3e8
+    const-wide/16 v5, 0x5dc
 
     invoke-virtual {v0, v2, v5, v6}, Lorg/aospextended/screenshot/longshot/app/GlobalScreenShotFrameLayout;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -3024,7 +3024,7 @@
 
     invoke-direct {v1, p0}, Lorg/aospextended/screenshot/GlobalScreenshot$19;-><init>(Lorg/aospextended/screenshot/GlobalScreenshot;)V
 
-    const-wide/16 v2, 0x3e8
+    const-wide/16 v2, 0x5dc
 
     invoke-virtual {v0, v1, v2, v3}, Lorg/aospextended/screenshot/longshot/app/GlobalScreenShotFrameLayout;->postDelayed(Ljava/lang/Runnable;J)Z
 

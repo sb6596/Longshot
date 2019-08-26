@@ -1344,6 +1344,22 @@
 
     invoke-virtual {v8, v15}, Landroid/app/Notification$Builder;->addAction(Landroid/app/Notification$Action;)Landroid/app/Notification$Builder;
 
+    # Edit action begins
+    iget-object v8, v1, Lorg/aospextended/screenshot/SaveImageInBackgroundTask;->mNotificationBuilder:Landroid/app/Notification$Builder;
+
+    #sget-object v7, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    #invoke-virtual {v2, v7, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+    #move-result-object v7
+    #local v4, "context":Landroid/content/Context;
+
+    invoke-static {v7, v4}, Lorg/aospextended/screenshot/EditActionInjector;->getAction(Landroid/net/Uri;Landroid/content/Context;)Landroid/app/Notification$Action;
+
+    move-result-object v15
+
+    invoke-virtual {v8, v15}, Landroid/app/Notification$Builder;->addAction(Landroid/app/Notification$Action;)Landroid/app/Notification$Builder;
+
+    # Edit action ends
+
     .line 455
     new-instance v8, Landroid/content/Intent;
 

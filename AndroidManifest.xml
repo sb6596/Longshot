@@ -10,5 +10,6 @@
         <service android:exported="false" android:name=".TakeScreenshotService"/>
         <receiver android:exported="false" android:name=".GlobalScreenshot$TargetChosenReceiver"/>
         <receiver android:exported="false" android:name=".GlobalScreenshot$DeleteScreenshotReceiver"/>
+        <receiver android:exported="false" android:name=".GlobalScreenshot$ScreenshotActionReceiver"/>
     </application>
 </manifest>
